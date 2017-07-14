@@ -1,0 +1,34 @@
+---
+---
+
+- game = Dvorak::GameLoader.instance.game(game_key)
+- test = game.latest_test
+
+%h1= game.name
+
+%table{id: 'rating'}
+  %tr{class: 'top'}
+    %td{class: 'title'} Most recent rating:
+    %td{class: 'grade'}
+      %div{class: 'code'}= test.rating.code
+      %div{class: 'name'}= test.rating.name
+  %tr
+    %td{class: 'details', colspan: 2}
+      Tested on
+      %span{class: 'date'}= test.date
+      using
+      %span{class: 'os'}= test.os
+
+%ul
+  - test.rating_description.each do |point|
+    %li= point
+
+%h2 What happens if I start with the wrong layout?
+
+%ul
+  - test.rating_wrong_layout.each do |point|
+    %li= point
+
+%h2 All tested versions
+
+= partial "table-tested", locals: {tested: game.tested}

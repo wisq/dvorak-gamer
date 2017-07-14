@@ -1,0 +1,9 @@
+%table
+  %tr
+    %th Game
+    %th Rating
+  - Dvorak::GameLoader.instance.each_game do |game|
+    %tr
+      %td
+        %a{href: "/game/#{game.key}.html"}= game.name
+      %td= game.latest_test.rating.code

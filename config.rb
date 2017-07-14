@@ -46,3 +46,10 @@ page '/*.txt', layout: false
 # end
 
 activate :livereload
+
+require 'lib/reloader'
+Reloader.load_all('helpers')
+
+data.games.keys.each do |key|
+  proxy "/game/#{key}.html", "/game.html", locals: {game_key: key}, ignore: true
+end

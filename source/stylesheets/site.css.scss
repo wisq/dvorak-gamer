@@ -1,12 +1,17 @@
 body {
-  background-color: #fbc547;
+  background-color: #eee;
+  background-image: url(/images/keyboard.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   padding: 18vh 1rem;
-  text-align: center;
+  font-size: 14pt;
+  width: 800px;
+  margin: 30px auto;
 }
 
 a {
@@ -18,7 +23,69 @@ a {
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+#header {
+  position: absolute;
+  top: 80px;
+  left: 450px;
+}
+
+#header #title {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#header a {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 20pt;
+  text-decoration: none;
+}
+#header a:hover {
+  text-decoration: underline;
+}
+
+#rating {
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+#rating td {
+  text-align: center;
+}
+
+#rating .title {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#rating .code {
+  font-size: 50pt;
+}
+
+#rating .grade {
+  max-width: 130px;
+}
+
+table {
+  border-collapse: separate;
+  border: 2px solid #333;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-spacing: 0px;
+}
+
+td, th {
+  padding: 10px;
+  border-left: 2px solid #333;
+  border-top: 2px solid #333;
+  text-align: center;
+}
+
+tr:first-child td, tr:first-child th {
+  border-top: none;
+}
+
+td:first-child, th:first-child {
+  border-left: none;
 }

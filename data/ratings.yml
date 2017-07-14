@@ -1,0 +1,45 @@
+perfect:
+  code: A+
+  name: Perfect!
+  description:
+    - Binds to raw physical keys, resulting in perfect support for all keyboard layouts.
+    - Displays correct keys based on the current keyboard layout, even if you change your layout mid-game.
+    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - This is what all games should aim for!
+  wrong-layout:
+    - Any on-screen hints or prompts will be in your current layout.
+    - $$TYPING_PROBLEMS$$.
+    - You can safely change layouts while the game is playing.
+
+physical-start:
+  code: A-
+  name: Automatic, startup only
+  description:
+    - Converts mapped keybindings to raw physical keys when the game starts, then binds to those.
+    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - Will support any keyboard layout by default, but don't change your keymap while playing!
+  wrong-layout:
+    - The game will bind to the wrong keys, rendering it unplayable.
+    - You will need to restart the game to be able to play.
+
+remap:
+  code: B
+  name: Remap Everything
+  description:
+    - Binds to logical keys, so it's affected by your current layout.
+    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - You'll probably want to remap all game keys to use Dvorak.
+    - You can play in Qwerty instead, but $$TYPING_PROBLEMS$$.
+  wrong-layout:
+    - The game will be unplayable until you change to the correct layout.
+    - You do not need to restart the game after changing layout.
+
+qwerty:
+  code: C
+  name: Qwerty Only
+  description:
+    - Binds to logical keys, so it's affected by your current layout.
+    - You can't remap anything, so you'll have to play in Qwerty.
+    - Fortunately, there isn't anything in the game that requires typing.
+  wrong-layout:
+    - You can change to Qwerty while the game is running.
