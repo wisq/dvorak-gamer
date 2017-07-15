@@ -1,5 +1,5 @@
 perfect:
-  code: A+
+  code: A
   name: Perfect!
   description:
     - Binds to raw physical keys, resulting in perfect support for all keyboard layouts.
@@ -12,8 +12,8 @@ perfect:
     - You can safely change layouts while the game is playing.
 
 physical-start:
-  code: A-
-  name: Automatic, startup only
+  code: C
+  name: Physical on startup only
   description:
     - Converts mapped keybindings to raw physical keys when the game starts, then binds to those.
     - All in-game actions can be remapped, and all main keyboard keys can be used.
@@ -35,7 +35,7 @@ remap:
     - You do not need to restart the game after changing layout.
 
 qwerty:
-  code: C
+  code: D
   name: Qwerty Only
   description:
     - Binds to logical keys, so it's affected by your current layout.
