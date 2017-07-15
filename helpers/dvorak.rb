@@ -137,6 +137,7 @@ module Dvorak
     TYPING_PROBLEMS = {
       social: 'using social features',
       naming: 'naming in-game items',
+      saves:  'naming your game saves',
     }
 
     def initialize(loader, hash)

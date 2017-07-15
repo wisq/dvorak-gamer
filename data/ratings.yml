@@ -3,7 +3,7 @@ perfect:
   name: Perfect!
   description:
     - Binds to raw physical keys, resulting in perfect support for all keyboard layouts.
-    - Displays correct keys based on the current keyboard layout, even if you change your layout mid-game.
+    - Displays keys as per the current layout, even if you change your layout mid-game.
     - All in-game actions can be remapped, and all main keyboard keys can be used.
     - This is what all games should aim for!
   wrong-layout:
@@ -24,7 +24,7 @@ physical-start:
 
 remap:
   code: B
-  name: Remap Everything
+  name: Remap everything
   description:
     - Binds to logical keys, so it's affected by your current layout.
     - All in-game actions can be remapped, and all main keyboard keys can be used.
