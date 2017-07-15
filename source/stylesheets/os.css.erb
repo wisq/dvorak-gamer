@@ -1,0 +1,9 @@
+<%# vim: sw=2
+%>
+
+<% data.os.values.map { |os| os['icon'] }.uniq.each do |os| %>
+
+.os-<%= os %> {
+  background-image: url(/images/os-<%= os %>.svg);
+}
+<% end %>

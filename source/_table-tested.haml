@@ -7,6 +7,6 @@
   - tested.each do |test|
     %tr
       %td= test.date
-      %td= test.os
+      %td!= render_os(test.os)
       %td= test.version
       %td= test.rating.code

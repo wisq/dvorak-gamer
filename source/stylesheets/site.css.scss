@@ -1,3 +1,5 @@
+// vim: sw=2
+
 body {
   background-color: #eee;
   background-image: url(/images/keyboard.png);
@@ -88,4 +90,14 @@ tr:first-child td, tr:first-child th {
 
 td:first-child, th:first-child {
   border-left: none;
+}
+
+.os-icon {
+  padding-left: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+li {
+  margin-top: 3px;
 }

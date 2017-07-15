@@ -2,6 +2,10 @@ require 'pathname'
 require 'singleton'
 
 module Dvorak
+  def render_os(os)
+    "<span class='os-icon os-#{os.icon}'>#{os.version}</span>"
+  end
+
   class GameLoader
     DATA_PATH = Pathname.new(__FILE__).dirname.dirname + 'data'
 
@@ -14,6 +18,10 @@ module Dvorak
     def initialize
       @depends = {}
       puts "Loading Dvorak game data ..."
+
+      @os = load_data('os') do |key, hash|
+        OS.new(self, key, hash)
+      end
 
       @ratings = load_data('ratings') do |key, hash|
         Rating.new(self, key, hash)
@@ -49,6 +57,10 @@ module Dvorak
       @games.values.each(&block)
     end
 
+    def os(key)
+      return @os.fetch(key)
+    end
+
     def rating(key)
       return @ratings.fetch(key)
     end
@@ -75,6 +87,15 @@ module Dvorak
       end
 
       raise "Missing #{self.class.name} values: #{missing.to_a.inspect}" unless missing.empty?
+    end
+  end
+
+  OSStruct ||= Struct.new(:icon, :version)
+  class OS < OSStruct
+    include StructInit
+
+    def initialize(loader, key, hash)
+      struct_init(hash)
     end
   end
 
@@ -109,7 +130,7 @@ module Dvorak
     end
   end
 
-  GameTestStruct ||= Struct.new(:date, :os, :version, :typing, :rating_key)
+  GameTestStruct ||= Struct.new(:date, :os_key, :version, :typing, :rating_key)
   class GameTest < GameTestStruct
     include StructInit
 
@@ -122,10 +143,15 @@ module Dvorak
       @loader = loader
 
       struct_init(hash) do |key, value|
+        key = :os_key if key == :os
         key = :rating_key if key == :rating
         value = parse_typing(value) if key == :typing
         [key, value]
       end
+    end
+
+    def os
+      @os ||= @loader.os(os_key)
     end
 
     def rating

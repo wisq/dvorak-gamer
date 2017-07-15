@@ -53,3 +53,5 @@ Reloader.load_all('helpers')
 data.games.keys.each do |key|
   proxy "/game/#{key}.html", "/game.html", locals: {game_key: key}, ignore: true
 end
+
+set :haml, { escape_attrs: true, escape_html: true }

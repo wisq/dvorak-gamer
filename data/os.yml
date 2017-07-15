@@ -1,0 +1,7 @@
+win81:
+  icon: windows
+  version: 8.1
+
+osx12:
+  icon: apple
+  version: 10.12

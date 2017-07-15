@@ -17,7 +17,7 @@
       Tested on
       %span{class: 'date'}= test.date
       using
-      %span{class: 'os'}= test.os
+      %span{class: 'os'}!= render_os(test.os)
 
 %ul
   - test.rating_description.each do |point|
