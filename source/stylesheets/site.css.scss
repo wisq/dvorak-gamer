@@ -41,10 +41,25 @@ a {
   display: inline-block;
   margin-left: 50px;
   font-size: 20pt;
+}
+#header a, h1 a {
   text-decoration: none;
 }
-#header a:hover {
+#header a:hover, h1 a:hover {
   text-decoration: underline;
+}
+
+h1 a.wikipedia:after {
+  content: '';
+  padding-right: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-image: url(/images/wikipedia.svg);
+  opacity: 0.2;
+}
+h1 a.wikipedia:hover:after {
+  opacity: 1.0;
 }
 
 #rating {
@@ -63,6 +78,8 @@ a {
 
 #rating .code {
   font-size: 50pt;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #rating .grade {

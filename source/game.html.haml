@@ -4,7 +4,8 @@
 - game = Dvorak::GameLoader.instance.game(game_key)
 - test = game.latest_test
 
-%h1= game.name
+%h1
+  %a{href: game.wikipedia, class: 'wikipedia'}= game.name
 
 %table{id: 'rating'}
   %tr{class: 'top'}
