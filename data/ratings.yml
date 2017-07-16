@@ -11,28 +11,30 @@ perfect:
     - $$TYPING_PROBLEMS$$.
     - You can safely change layouts while the game is playing.
 
-physical-start:
-  code: C
-  name: Physical on startup only
-  description:
-    - Converts mapped keybindings to raw physical keys when the game starts, then binds to those.
-    - All in-game actions can be remapped, and all main keyboard keys can be used.
-    - Will support any keyboard layout by default, but don't change your keymap while playing!
-  wrong-layout:
-    - The game will bind to the wrong keys, rendering it unplayable.
-    - You will need to restart the game to be able to play.
-
 remap:
   code: B
-  name: Remap everything
+  name: Remappable
   description:
     - Binds to logical keys, so it's affected by your current layout.
     - All in-game actions can be remapped, and all main keyboard keys can be used.
-    - You'll probably want to remap all game keys to use Dvorak.
-    - You can play in Qwerty instead, but $$TYPING_PROBLEMS$$.
+    - You can play in Dvorak by rebinding all keys.
+    - Or you can play in Qwerty, but $$TYPING_PROBLEMS$$.
   wrong-layout:
     - The game will be unplayable until you change to the correct layout.
     - You do not need to restart the game after changing layout.
+
+remap-physical-startup:
+  code: C
+  name: Remappable, startup only
+  description:
+    - Stores keybindings as logical keys.  Binds to the corresponding physical keys on startup.
+    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - You can play in Dvorak by rebinding all keys.
+    - Or you can play in Qwerty, but $$TYPING_PROBLEMS$$.
+    - Be sure to start the game in the right layout!
+  wrong-layout:
+    - The game will bind to the wrong keys, rendering it unplayable.
+    - You will need to restart the game to be able to play.
 
 qwerty:
   code: D

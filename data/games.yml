@@ -9,16 +9,21 @@ overwatch:
       typing:
         social: recommended
 
-borderlands2:
-  name: Borderlands 2
-  wikipedia: https://en.wikipedia.org/wiki/Borderlands_2
-  tested:
-    - date: 2017-07-14
-      os: win81
-      version: 1.7.0.8636
-      rating: physical-start
-      typing:
-        social: optional
+# FIXME: Figure out what's up with Borderlands.  I think it may be more complicated.
+# It's correctly changing back to WASD when I restart in Qwerty, and it does bind to physical keys.
+# But it's also ignoring my keybinding changes on restart.
+# My install is pretty old, so maybe I (deliberately?) borked it at some point.  Try with a fresh config.
+#
+# borderlands2:
+#   name: Borderlands 2
+#   wikipedia: https://en.wikipedia.org/wiki/Borderlands_2
+#   tested:
+#     - date: 2017-07-14
+#       os: win81
+#       version: 1.7.0.8636
+#       rating: physical-start
+#       typing:
+#         social: optional
 
 kerbal:
   name: Kerbal Space Program
@@ -31,3 +36,14 @@ kerbal:
       typing:
         naming: required
         saves: optional
+
+alien-swarm-reactive:
+  name: "Alien Swarm: Reactive Drop"
+  wikipedia: https://en.wikipedia.org/wiki/Alien_Swarm
+  tested:
+    - date: 2017-07-16
+      os: win81
+      version: 7.1.0.9
+      rating: remap-physical-startup
+      typing:
+        social: optional
