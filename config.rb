@@ -52,10 +52,12 @@ unless ENV['DEPLOYING']
 
   require 'lib/reloader'
   Reloader.load_all('helpers')
+else
+  require 'helpers/dvorak'
 end
 
-data.games.keys.each do |key|
-  proxy "/game/#{key}.html", "/game.html", locals: {game_key: key}, ignore: true
+Dvorak::GameLoader.instance.each_game do |game|
+  proxy "/game/#{game.key}.html", "/game.html", locals: {game_key: game.key}, ignore: true
 end
 
 set :haml, { escape_attrs: true, escape_html: true }
