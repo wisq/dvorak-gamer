@@ -1,7 +1,7 @@
 namespace :deploy do
   task :wait do
-    expect = capture_git(%w(git rev-parse master))
-    puts "Local version:    #{expect}"
+    expect = capture_git(%w(git ls-remote origin master))
+    puts "\nGitHub version:   #{expect}"
 
     last_version = nil
     loop do
@@ -13,7 +13,7 @@ namespace :deploy do
       end
 
       if version == expect
-        puts "=== Deploy successful! ==="
+        puts "\n=== Deploy successful! ==="
         break
       end
       sleep(3)
@@ -21,8 +21,9 @@ namespace :deploy do
   end
 
   def capture_git(command)
-    git = IO.popen(command) { |fh| fh.read.strip }
-    raise "Unexpected git rev: #{git.inspect}" unless git =~ /\A[0-9a-f]+\z/
-    return git
+    output = IO.popen(command) { |fh| fh.read.strip }
+    raise "Command failed: #{command.inspect}" unless $?.success?
+    raise "Unexpected output: #{output.inspect}" unless output =~ /\A([0-9a-f]+)(?:\s|\z)/
+    return $1
   end
 end
