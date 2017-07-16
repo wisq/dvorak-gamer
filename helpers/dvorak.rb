@@ -54,7 +54,7 @@ module Dvorak
     end
 
     def each_game(&block)
-      @games.values.each(&block)
+      @games.values.sort_by(&:sort_key).each(&block)
     end
 
     def os(key)
@@ -105,6 +105,20 @@ module Dvorak
 
     def initialize(loader, key, hash)
       struct_init(hash)
+      @key = key
+    end
+
+    def sort_key
+      @sort_key ||= generate_sort_key
+    end
+
+    private
+
+    def generate_sort_key
+      code =~ /^([A-Z])(-+|\++|)$/ or raise "weird code: #{code.inspect}"
+      letter = $1
+      modifier = $2.length * (if $2.start_with?('-') then -1 else 1 end)
+      return [letter, -modifier, name, @key]
     end
   end
 
@@ -127,6 +141,10 @@ module Dvorak
     def rating
       p @loader.class
       latest_test.rating
+    end
+
+    def sort_key
+      [latest_test.rating.sort_key, name, key]
     end
   end
 
