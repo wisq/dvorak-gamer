@@ -6,3 +6,6 @@ server: bundle
 
 bundle:
 	bundle check || bundle install
+
+clean:
+	rm -rf build/
