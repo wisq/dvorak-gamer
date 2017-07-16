@@ -9,3 +9,6 @@ bundle:
 
 clean:
 	rm -rf build/
+
+test:
+	BUNDLE_FROZEN="true" BUNDLE_WITHOUT="server:development" DEPLOYING=1 $(MAKE) build

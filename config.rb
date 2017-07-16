@@ -45,10 +45,14 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
-activate :livereload
+unless ENV['DEPLOYING']
+  Bundler.require(:development)
 
-require 'lib/reloader'
-Reloader.load_all('helpers')
+  activate :livereload
+
+  require 'lib/reloader'
+  Reloader.load_all('helpers')
+end
 
 data.games.keys.each do |key|
   proxy "/game/#{key}.html", "/game.html", locals: {game_key: key}, ignore: true

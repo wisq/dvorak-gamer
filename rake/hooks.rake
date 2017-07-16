@@ -17,7 +17,7 @@ namespace :hooks do
           output, status = Open3.capture2(*%w(git apply), stdin_data: diff)
           raise "git apply failed: #{status}" unless status.success?
         end
-        sh *%w(make clean build)
+        sh *%w(make test)
       end
     end
   end

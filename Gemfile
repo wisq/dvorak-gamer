@@ -8,6 +8,11 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 
 gem 'rake'
 
-gem 'middleman-livereload'
-gem 'padrino-core' # for the reloader
-gem 'pry'
+group :server do
+  gem 'middleman-livereload'
+  gem 'padrino-core' # for the reloader
+end
+
+group :development do
+  gem 'pry'
+end
