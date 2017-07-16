@@ -55,3 +55,4 @@ data.games.keys.each do |key|
 end
 
 set :haml, { escape_attrs: true, escape_html: true }
+Haml::TempleEngine.disable_option_validator! # suppress warnings
