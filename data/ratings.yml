@@ -45,3 +45,29 @@ qwerty:
     - Fortunately, there isn't anything in the game that requires typing.
   wrong-layout:
     - You can change to Qwerty while the game is running.
+
+# Plans for future ratings:
+#
+# If a game stores keybinds as physical keys and maps them to logical keys on
+# startup, I think it's probably a C+.  Basically, it's still just as annoying
+# as C in everyday usage (which is why it's not B-), but you don't have to do
+# the one-time remap.
+#
+# C- will be for games that do the physical-logical mappery stuff, but at
+# varying times in addition to startup.  Metal Gear Solid 5 comes to mind.
+#
+# I'm going to reserve E for games that need Qwerty but also involve a moderate
+# amount of typing.  One candidate that springs to mind is Perfect World — I
+# remember it had unremappable keys, but it's also an MMO, hence lots of
+# social.
+#
+# F is for unplayable things.  The only one that comes to mind right now is
+# "Elegy for a Dead World".  Writing peotry with unremappable movement keys =
+# nope.
+#
+# A+ may be for games that specifically call out Dvorak and make themselves
+# work with it.  "Epistory: Typing Chronicles" comes to mind.  However, this
+# would only be if its mapping strategy didn't place it in a lower category!
+#
+# Otherwise, I'll add pluses and minuses based on whether a game makes an
+# effort (plus) or manages to fuck things up even more somehow (minus).
