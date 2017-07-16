@@ -1,6 +1,6 @@
 namespace :deploy do
   task :wait do
-    expect = capture_git(%w(git rev-parse HEAD))
+    expect = capture_git(%w(git rev-parse master))
     puts "Local version:    #{expect}"
 
     last_version = nil
