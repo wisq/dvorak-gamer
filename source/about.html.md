@@ -28,4 +28,10 @@ You don't need to be a Dvorak user to contribute, but you will need to be comfor
 
 I'm just a gamer who switched to Dvorak at some point.  If you really want to reach out to me for some reason, your best option is probably <a href="https://twitter.com/wisqnet" target="_blank">via Twitter</a>.
 
-You can also see my game collection <a href="http://steamcommunity.com/id/wisq" target="_blank">on Steam</a>, but that's not a great way to reach me, because I generally don't accept unsolicited friend requests.  Nothing personal, it's just that there's a lot of spammers and scammers out there.
+You can also see my game collection <a href="http://steamcommunity.com/id/wisq" target="_blank">on Steam</a>, but that's not a great way to reach me, because I generally don't accept unsolicited friend requests.
+
+## Why a Mac keyboard?  Real gamers use Windows!
+
+Real gamers use whatever system they want.
+
+But really, it's just because Apple makes nice-looking keyboards.
