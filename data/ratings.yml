@@ -25,7 +25,7 @@ remap:
 
 remap-physical-startup:
   code: C
-  name: Remappable, startup only
+  name: Remappable, binds at startup
   description:
     - Stores keybindings as logical keys.  Binds to the corresponding physical keys on startup.
     - All in-game actions can be remapped, and all main keyboard keys can be used.

@@ -37,7 +37,7 @@ kerbal:
         naming: required
         saves: optional
 
-alien-swarm-reactive:
+alien-swarm-reactive-drop:
   name: "Alien Swarm: Reactive Drop"
   wikipedia: https://en.wikipedia.org/wiki/Alien_Swarm
   tested:
