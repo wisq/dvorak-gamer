@@ -34,7 +34,6 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  body { font-size: 9pt; }
   #container { width: 95%; }
 }
 
@@ -141,4 +140,8 @@ td:first-child, th:first-child {
 
 li {
   margin-top: 3px;
+}
+
+@media screen and (max-width: 500px) {
+  #header #hdtitle { font-size: 180%; }
 }
