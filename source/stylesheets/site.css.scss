@@ -1,19 +1,12 @@
 // vim: sw=2
 
 body {
-  background-color: #eee;
-  background-image: url(/images/keyboard.png);
-  background-size: 30%;
-  background-repeat: no-repeat;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
   font-size: 14pt;
-  width: 800px;
-  margin: 30px auto;
 }
 
 a {
@@ -25,22 +18,53 @@ a {
   }
 }
 
+#container {
+  width: 800px;
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 1000px) {
+  body { font-size: 12pt; }
+  #container { width: 600px; }
+}
+
+@media screen and (max-width: 800px) {
+  body { font-size: 10pt; }
+  #container { width: 400px; }
+}
+
+@media screen and (max-width: 500px) {
+  body { font-size: 9pt; }
+  #container { width: 95%; }
+}
+
+
 #header {
-  position: absolute;
-  top: 80px;
-  left: 450px;
+  display: flex;
+  align-items: center;
+}
+#header img {
+  width: 20vw;
+  height: auto;
 }
 
-#header #title {
+#header #hdbar {
   display: inline-block;
-  font-size: 40px;
+}
+
+#header #hdtitle {
+  display: inline-block;
+  font-size: 214%;
   font-weight: bold;
+  margin-left: 0.2em;
 }
-
-#header a {
+#header #hdlinks {
   display: inline-block;
-  margin-left: 50px;
-  font-size: 20pt;
+}
+#header #hdlinks a {
+  display: inline-block;
+  margin-left: 1.8em;
+  font-size: 142%;
 }
 #header a, h1 a {
   text-decoration: none;
@@ -51,7 +75,7 @@ a {
 
 h1 a.wikipedia:after {
   content: '';
-  padding-right: 60px;
+  padding-right: 1.7em;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -64,7 +88,7 @@ h1 a.wikipedia:hover:after {
 
 #rating {
   margin-left: 10%;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 #rating td {
@@ -72,18 +96,18 @@ h1 a.wikipedia:hover:after {
 }
 
 #rating .title {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 
 #rating .code {
-  font-size: 50pt;
-  padding-left: 15px;
-  padding-right: 15px;
+  font-size: 357%;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
 #rating .grade {
-  max-width: 130px;
+  max-width: 7em;
 }
 
 table {
@@ -110,7 +134,7 @@ td:first-child, th:first-child {
 }
 
 .os-icon {
-  padding-left: 25px;
+  padding-left: 1.55em;
   background-size: contain;
   background-repeat: no-repeat;
 }

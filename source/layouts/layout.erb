@@ -13,10 +13,17 @@
   </head>
   <body>
     <div id="header">
-      <div id="title">The Dvorak Gamer Index</div>
-      <%= link_to 'The Index', '/' %>
-      <%= link_to 'About', '/about.html' %>
+      <img src="/images/keyboard.png"/>
+      <div id="hdbar">
+        <div id="hdtitle">The Dvorak Gamer Index</div>
+        <div id="hdlinks">
+          <%= link_to 'The Index', '/' %>
+          <%= link_to 'About', '/about.html' %>
+        </div>
+      </div>
     </div>
-    <%= yield %>
+    <div id="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
