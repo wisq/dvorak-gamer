@@ -56,4 +56,4 @@ end
 
 set :haml, { escape_attrs: true, escape_html: true }
 
-system(%w(git rev-parse HEAD))
+system(*%w(git rev-parse HEAD))
