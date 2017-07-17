@@ -30,6 +30,17 @@ The latter is for programmers like myself who are already familiar with how git,
 
 In either case, remember that I'm going to want details about what you tried and what the results were.  I'm pretty thorough with how I rate these games, and it's not just enough to say "you can remap everything so it gets B" or "it automatically worked with Dvorak so it gets A".  Unless you've been equally meticulous, there's probably going to be some back and forth discussion, and I may end up giving it a different rating than you expect.
 
+Here's a list of some of the things I'm going to want to know:
+
+* Before remapping anything, did you start the game in Dvorak?
+  * Did it correctly remap all keys to make sense on Dvorak?
+* What happens if you change your layout while the game is running?  Do the same keys continue to work (binds to physical), or are they scattered all over the keyboard now (binds to logical)?
+  * If physical: What happens if you start the game in layout A (so it binds to the correct keys), then change keyboard layout to B, then continue playing the game?  Do any actions ever stop working?
+* If you start the game with the "wrong" layout, get into the game and discover your keys are unplayable, and then change to the "right" layout, is the game now playable?
+* Have you played the game in Dvorak (or another layout highly different from Qwerty)?  Are there any actions that are hardcoded / non-remappable?
+* Have you tried remapping to punctuation keys like period, comma, etc.?
+* Have you finished the game?  This isn't 100% necessary, but it does help indicate there aren't any layout-related quirks further down the line.
+
 Also, remember that the rating is purely about how Dvorak-friendly a game is, and has absolutely nothing to do with how good or bad it is.  Some of my favourite games have (or would be given) some pretty mediocre or even awful ratings, and vice versa.  This isn't a review site or a popularity contest.
 
 ## Acknowledgements
