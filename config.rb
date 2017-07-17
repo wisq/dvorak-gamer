@@ -64,3 +64,4 @@ set :haml, { escape_attrs: true, escape_html: true, ugly: false }
 Haml::TempleEngine.disable_option_validator! # suppress warnings
 
 activate :directory_indexes
+activate :sitemap, hostname: 'https://dvorakgamer.com'
