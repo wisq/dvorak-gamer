@@ -11,7 +11,7 @@ clean:
 	rm -rf build/
 
 test:
-	BUNDLE_FROZEN="true" BUNDLE_WITHOUT="server:development" DEPLOYING=1 $(MAKE) build
+	BUNDLE_FROZEN="true" BUNDLE_WITHOUT="server:development" MM_ENV="production" $(MAKE) build
 
 deploy:
 	git push origin master

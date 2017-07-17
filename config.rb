@@ -45,7 +45,7 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
-unless ENV['DEPLOYING']
+if app.development?
   Bundler.require(:development)
 
   activate :livereload
