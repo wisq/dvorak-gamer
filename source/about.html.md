@@ -1,5 +1,6 @@
 ---
 title: About the Index
+description: The FAQ for the Dvorak Gamer Index site.
 ---
 
 # About

@@ -1,5 +1,6 @@
 ---
 title: Dvorak and Gaming
+description: What sort of impact does using Dvorak have on video games?
 ---
 
 # How does Dvorak affect gaming?

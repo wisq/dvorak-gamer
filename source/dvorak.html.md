@@ -1,5 +1,6 @@
 ---
 title: About the Dvorak Keyboard Layout
+description: A short primer on the Dvorak keyboard layout.
 ---
 
 # What is Dvorak?
@@ -54,6 +55,6 @@ My finger and hand strain essentially disappeared at that point, and my speed an
 
 ## Can you still type Qwerty?
 
-It's very confusing and difficult for me to return to Qwerty.  If I continue typing for many minutes, I can regain some minor degree of ability.
+This varies from person to person.  In my case, it's very confusing and difficult for me to return to Qwerty.  If I continue typing for many minutes, I can regain some minor degree of ability.
 
 For the most part, I no longer type Qwerty except in emergencies, such as when fixing others' computers.  Even then, I will temporarily switch their computer to Dvorak if my work involves more than a minimum of typing.

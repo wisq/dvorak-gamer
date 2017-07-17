@@ -3,6 +3,7 @@
 
 - game = Dvorak::GameLoader.instance.game(game_key)
 - content_for(:title, game.name)
+- content_for(:description, "How well does #{game.name} support alternate keyboard layouts like Dvorak?")
 - test = game.latest_test
 
 %h1
