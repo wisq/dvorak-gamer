@@ -1,5 +1,5 @@
 ---
-title: About the Dvorak Gamer Index
+title: About the Index
 ---
 
 # About

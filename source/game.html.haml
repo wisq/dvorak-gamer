@@ -2,6 +2,7 @@
 ---
 
 - game = Dvorak::GameLoader.instance.game(game_key)
+- content_for(:title, game.name)
 - test = game.latest_test
 
 %h1

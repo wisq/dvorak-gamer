@@ -6,7 +6,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || yield_content(:title) || "The Dvorak Gamer Index" %></title>
+    <title><%= [
+      current_page.data.title || yield_content(:title),
+      "The Dvorak Gamer Index"
+    ].compact.join(" – ") %></title>
     <%= stylesheet_link_tag "site" %>
     <%= stylesheet_link_tag "os" %>
   </head>
