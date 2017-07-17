@@ -60,5 +60,5 @@ Dvorak::GameLoader.instance.each_game do |game|
   proxy "/game/#{game.key}.html", "/game.html", locals: {game_key: game.key}, ignore: true
 end
 
-set :haml, { escape_attrs: true, escape_html: true }
+set :haml, { escape_attrs: true, escape_html: true, ugly: false }
 Haml::TempleEngine.disable_option_validator! # suppress warnings
