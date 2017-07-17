@@ -14,5 +14,6 @@ test:
 	BUNDLE_FROZEN="true" BUNDLE_WITHOUT="server:development" MM_ENV="production" $(MAKE) build
 
 deploy:
+	ssh-add -l | grep -iq ed25519 || ssh-add
 	git push origin master
 	rake deploy:wait
