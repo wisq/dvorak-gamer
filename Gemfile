@@ -7,7 +7,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 
 gem 'rake'
-gem 'middleman-sitemap', github: 'matsu911/middleman-sitemap'
+gem 'middleman-sitemap', git: 'https://github.com/matsu911/middleman-sitemap.git'
 
 group :development do
   gem 'middleman-livereload'
