@@ -47,3 +47,16 @@ alien-swarm-reactive-drop:
       rating: remap-physical-startup
       typing:
         social: optional
+
+turing-test:
+  name: "The Turing Test"
+  wikipedia: https://en.wikipedia.org/wiki/The_Turing_Test_(video_game)
+  tested:
+    - date: 2017-07-18
+      os: win81
+      # Well, I can't find any version number anywhere, so I guess the
+      # latest Steam news about "version 1.2" will have to do.
+      version: 1.2
+      rating: remap-hardcoded-hints
+      typing:
+        terminals: optional

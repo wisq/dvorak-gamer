@@ -156,6 +156,7 @@ module Dvorak
       social: 'using social features',
       naming: 'naming in-game items',
       saves:  'naming your game saves',
+      terminals: 'using in-game computer terminals',
     }
 
     def initialize(loader, hash)
