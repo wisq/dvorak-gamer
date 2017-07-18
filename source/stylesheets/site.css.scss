@@ -6,7 +6,7 @@ body {
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 14pt;
+  font-size: 18px;
 }
 
 a {
@@ -23,20 +23,10 @@ a {
   margin: 30px auto;
 }
 
-@media screen and (max-width: 1000px) {
-  body { font-size: 12pt; }
-  #container { width: 600px; }
-}
-
-@media screen and (max-width: 800px) {
-  body { font-size: 10pt; }
-  #container { width: 400px; }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 840px) {
+  body { font-size: 16px; }
   #container { width: 95%; }
 }
-
 
 #header {
   display: flex;
@@ -112,13 +102,13 @@ h1 a.wikipedia:hover:after {
 table {
   border-collapse: separate;
   border: 2px solid #333;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
   border-spacing: 0px;
 }
 
 td, th {
-  padding: 10px;
+  padding: 0.6em;
   border-left: 2px solid #333;
   border-top: 2px solid #333;
   text-align: center;
@@ -142,6 +132,16 @@ li {
   margin-top: 3px;
 }
 
+td.nowrap {
+  white-space: nowrap;
+}
+
+h1 { font-size: 150%; }
+h2 { font-size: 120%; }
+
 @media screen and (max-width: 500px) {
-  #header #hdtitle { font-size: 180%; }
+  #header #hdtitle { font-size: 150%; }
+  #header #hdlinks a { font-size: 130%; }
+  h1 { font-size: 140%; }
+  h2 { font-size: 120%; }
 }
