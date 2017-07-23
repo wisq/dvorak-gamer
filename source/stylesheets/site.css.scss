@@ -23,27 +23,21 @@ a {
   margin: 30px auto;
 }
 
-@media screen and (max-width: 840px) {
-  body { font-size: 16px; }
-  #container { width: 95%; }
-}
-
 #header {
-  display: flex;
-  align-items: center;
-}
-#header img {
-  width: 20vw;
-  height: auto;
+  background-image: url(/images/keyboard.png);
+  background-repeat: no-repeat;
+  background-size: 20vw 11.25vw;
+  padding-left: 20vw;
+  min-height: 11.25vw;
 }
 
 #header #hdbar {
-  display: inline-block;
+  padding-top: 2.5vw;
 }
 
 #header #hdtitle {
   display: inline-block;
-  font-size: 214%;
+  font-size: 150%;
   font-weight: bold;
   margin-left: 0.2em;
 }
@@ -53,7 +47,7 @@ a {
 #header #hdlinks a {
   display: inline-block;
   margin-left: 1.8em;
-  font-size: 142%;
+  font-size: 130%;
 }
 #header a, h1 a {
   text-decoration: none;
@@ -139,9 +133,36 @@ td.nowrap {
 h1 { font-size: 170%; }
 h2 { font-size: 140%; }
 
-@media screen and (max-width: 500px) {
+// Large size: scale the headers
+@media screen and (min-width: 900px) {
+  #header #hdtitle { font-size: 3.35vw; }
+  #header #hdlinks a { font-size: 2.22vw; }
+}
+
+// Extra large size: stop scaling the headers, center them
+@media screen and (min-width: 1500px) {
+  #header #hdtitle { font-size: 50.25px; }
+  #header #hdlinks a { font-size: 33.3px; }
+  #header #hdbar { padding-top: 37.5px; }
+  #header {
+    background-size: 300px 168.75px;
+    padding-left: 300px;
+    height: 168.75px;
+    width: 1200px;
+    margin: auto;
+    min-height: 0px;
+  }
+}
+
+// Mobile size: less font scaling
+@media screen and (max-width: 550px) {
+  body { font-size: 16px; }
   #header #hdtitle { font-size: 150%; }
   #header #hdlinks a { font-size: 130%; }
   h1 { font-size: 140%; }
   h2 { font-size: 120%; }
+}
+
+@media screen and (max-width: 840px) {
+  #container { width: 95%; }
 }
