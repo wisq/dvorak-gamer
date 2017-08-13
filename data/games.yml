@@ -60,3 +60,15 @@ turing-test:
       rating: remap-hardcoded-hints
       typing:
         terminals: optional
+
+starbound:
+  name: Starbound
+  wikipedia: https://en.wikipedia.org/wiki/Starbound
+  tested:
+    - date: 2017-08-12
+      os: win81
+      version: 1.3.2 # from pause menu
+      rating: remap-hardcoded-hints
+      typing:
+        naming: recommended
+        social: optional
