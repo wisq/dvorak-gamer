@@ -32,6 +32,11 @@
   - test.rating_wrong_layout.each do |point|
     %li= point
 
+- if game.notes
+  %h2 Anything else I should know?
+  - [*game.notes].each do |para|
+    %p= para
+
 %h2 All tested versions
 
 = partial "table-tested", locals: {tested: game.tested}

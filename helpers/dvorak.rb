@@ -122,13 +122,14 @@ module Dvorak
     end
   end
 
-  GameStruct ||= Struct.new(:key, :name, :wikipedia, :tested)
+  GameStruct ||= Struct.new(:key, :name, :wikipedia, :tested, :notes)
   class Game < GameStruct
     def initialize(loader, key, hash)
       @loader = loader
       self.key = key
       self.name = hash.fetch('name')
       self.wikipedia = hash.fetch('wikipedia')
+      self.notes = hash['notes']
       self.tested = hash.fetch('tested').map do |hash|
         GameTest.new(loader, hash)
       end.sort(&:date).reverse

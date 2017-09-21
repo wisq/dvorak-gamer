@@ -72,3 +72,17 @@ starbound:
       typing:
         naming: recommended
         social: optional
+
+guild-2-renaissance:
+  name: "The Guild 2: Renaissance"
+  wikipedia: https://en.wikipedia.org/wiki/The_Guild_2
+  tested:
+    - date: 2017-07-19
+      os: win81
+      version: 4.21
+      rating: qwerty-typing
+      typing:
+        naming: optional
+  notes:
+    - "It took me a while to figure out what was going on here.  Even after changing layouts mid-game, some keys (like plus and minus for speed) would not work."
+    - "It turns out this is due to an Alt-Tab bug, not due to keyboard mapping.  If you experience this issue, just tap Alt again to reset it."

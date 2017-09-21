@@ -51,11 +51,21 @@ remap-physical-startup:
 
 qwerty:
   code: D
-  name: Qwerty Only
+  name: Qwerty only
   description:
     - Binds to logical keys, so it's affected by your current layout.
     - You can't remap anything, so you'll have to play in Qwerty.
     - Fortunately, there isn't anything in the game that requires typing.
+  wrong-layout:
+    - You can change to Qwerty while the game is running.
+
+qwerty-typing:
+  code: D-
+  name: Qwerty only; some typing
+  description:
+    - Binds to logical keys, so it's affected by your current layout.
+    - You can't remap anything, so you'll have to play in Qwerty.
+    - $$TYPING_PROBLEMS$$.
   wrong-layout:
     - You can change to Qwerty while the game is running.
 
