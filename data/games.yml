@@ -86,3 +86,20 @@ guild-2-renaissance:
   notes:
     - "It took me a while to figure out what was going on here.  Even after changing layouts mid-game, some keys (like plus and minus for speed) would not work."
     - "It turns out this is due to an Alt-Tab bug, not due to keyboard mapping.  If you experience this issue, just tap Alt again to reset it."
+
+heat-signature:
+  name: "Heat Signature"
+  wikipedia: https://en.wikipedia.org/wiki/Heat_Signature_(video_game)
+  tested:
+    - date: 2017-09-28
+      os: win81
+      version: 2017.09.28.1
+      rating: remap-special-hints-problem
+      typing:
+        naming: optional
+  notes:
+    - "Certain common Dvorak \"WASD\" keys (like comma and period) will only show up as \"?\" in the on-screen hints."
+    - "This is normally harmless — except when repairing your pod.  The game requires that you hit certain keys, and NOT hit certain other keys (or else you'll die).  It relies on keyboard hints to communicate this to you, and if multiple keys are showing up as \"?\", you're stuck playing Russian Roulette with your character's life."
+    - "It's not too hard to avoid damaging your pod — but you may want to avoid using the Foundry Brick, which relies on taking damage to be useful."
+    - "There's only really one point in the game that involves typing: When retiring, you can name one item and pass on to your future characters.  That's infrequent enough that I recommend just playing in Qwerty for now."
+    - "I've reported this issue to the game's creator."

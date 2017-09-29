@@ -36,6 +36,19 @@ remap-hardcoded-hints:
     - The game will be unplayable until you change to the correct layout.
     - You do not need to restart the game after changing layout.
 
+remap-special-hints-problem:
+  code: B-
+  name: Remappable, troublesome hints
+  description:
+    - Binds to logical keys, so it's affected by your current layout.
+    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - Most keys have correct on-screen keyboard hints, but some "special" keys (e.g. punctuation) have missing / incorrect hints.
+    - You can play in Dvorak by rebinding all keys.
+    - Or you can play in Qwerty, but $$TYPING_PROBLEMS$$.
+  wrong-layout:
+    - The game will be unplayable until you change to the correct layout.
+    - You do not need to restart the game after changing layout.
+
 remap-physical-startup:
   code: C
   name: Remappable, binds at startup
