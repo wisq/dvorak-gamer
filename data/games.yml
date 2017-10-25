@@ -103,3 +103,14 @@ heat-signature:
     - "It's not too hard to avoid damaging your pod — but you may want to avoid using the Foundry Brick, which relies on taking damage to be useful."
     - "There's only really one point in the game that involves typing: When retiring, you can name one item and pass on to your future characters.  That's infrequent enough that I recommend just playing in Qwerty for now."
     - "I've reported this issue to the game's creator."
+
+darkest-dungeon:
+  name: "Darkest Dungeon"
+  wikipedia: https://en.wikipedia.org/wiki/Darkest_Dungeon
+  tested:
+    - date: 2017-10-28
+      os: win81
+      version: 20645
+      rating: perfect-hardcoded-hints-no-remap
+      typing:
+        naming: optional

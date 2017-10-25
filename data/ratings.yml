@@ -11,6 +11,18 @@ perfect:
     - $$TYPING_PROBLEMS$$.
     - You can safely change layouts while the game is playing.
 
+perfect-hardcoded-hints-no-remap:
+  code: A-
+  name: Qwerty hints, no remapping
+  description:
+    - Binds to raw physical keys, resulting in perfect support for all keyboard layouts.
+    - Displays keys in Qwerty layout, regardless of current layout.
+    - Keys cannot be remapped.
+  wrong-layout:
+    - The game will play fine, regardless of layout.
+    - $$TYPING_PROBLEMS$$.
+    - You can safely change layouts while the game is playing.
+
 remap:
   code: B
   name: Remappable
