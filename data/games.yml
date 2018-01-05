@@ -114,3 +114,65 @@ darkest-dungeon:
       rating: perfect-hardcoded-hints-no-remap
       typing:
         naming: optional
+
+simple-rockets:
+  name: "Simple Rockets"
+  tested:
+    - date: 2017-11-05
+      os: win81
+      version: unknown
+      rating: qwerty-typing
+      typing:
+        naming: recommended
+
+afghanistan-11:
+  name: "Afghanistan '11"
+  tested:
+    - date: 2018-01-04
+      os: win81
+      version: 1.1.8
+      rating: qwerty-typing
+      typing:
+        naming: optional
+
+oxygen-not-included:
+  name: Oxygen Not Included
+  wikipedia: https://en.wikipedia.org/wiki/Oxygen_Not_Included
+  tested:
+    - date: 2018-01-04
+      os: win81
+      version: TB-247630 (beta)
+      rating: remap
+      typing:
+        naming: optional
+
+dead-by-daylight:
+  name: Dead by Daylight
+  wikipedia: https://en.wikipedia.org/wiki/Dead_by_Daylight
+  tested:
+    - date: 2018-01-04
+      os: win81
+      version: 1.8.3
+      rating: remap
+      typing:
+        social: recommended
+
+astroneer:
+  name: Astroneer
+  wikipedia: https://en.wikipedia.org/wiki/Astroneer
+  tested:
+    - date: 2018-01-04
+      os: win81
+      version: 0.5.0.0 (beta)
+      rating: remap
+      typing: {}
+
+bomber-crew:
+  name: Bomber Crew
+  tested:
+    - date: 2018-01-04
+      os: win81
+      version: 4117
+      rating: qwerty-typing
+      typing:
+        naming: optional
