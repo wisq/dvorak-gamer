@@ -4,7 +4,7 @@ perfect:
   description:
     - Binds to raw physical keys, resulting in perfect support for all keyboard layouts.
     - Displays keys as per the current layout, even if you change your layout mid-game.
-    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - All in-game actions can be remapped, and there are no known issues mapping to common Dvorak keys (e.g. punctuation).
     - This is what all games should aim for!
   wrong-layout:
     - Any on-screen hints or prompts will be in your current layout.
@@ -28,7 +28,7 @@ remap:
   name: Remappable
   description:
     - Binds to logical keys, so it's affected by your current layout.
-    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - All in-game actions can be remapped, and there are no known issues mapping to common Dvorak keys (e.g. punctuation).
     - You can play in Dvorak by rebinding all keys.
     - Or you can play in Qwerty, but $$TYPING_PROBLEMS$$.
   wrong-layout:
@@ -40,7 +40,7 @@ remap-hardcoded-hints:
   name: Remappable, wrong hints
   description:
     - Binds to logical keys, so it's affected by your current layout.
-    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - All in-game actions can be remapped, and there are no known issues mapping to common Dvorak keys (e.g. punctuation).
     - On-screen keyboard hints are hardcoded and will not reflect remapped keys.
     - You can play in Dvorak by rebinding all keys.
     - Or you can play in Qwerty, but $$TYPING_PROBLEMS$$.
@@ -53,7 +53,7 @@ remap-special-hints-problem:
   name: Remappable, troublesome hints
   description:
     - Binds to logical keys, so it's affected by your current layout.
-    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - All in-game actions can be remapped, and there are no known issues mapping to common Dvorak keys (e.g. punctuation).
     - Most keys have correct on-screen keyboard hints, but some "special" keys (e.g. punctuation) have missing / incorrect hints.
     - You can play in Dvorak by rebinding all keys.
     - Or you can play in Qwerty, but $$TYPING_PROBLEMS$$.
@@ -66,7 +66,7 @@ remap-physical-startup:
   name: Remappable, binds at startup
   description:
     - Stores keybindings as logical keys.  Binds to the corresponding physical keys on startup.
-    - All in-game actions can be remapped, and all main keyboard keys can be used.
+    - All in-game actions can be remapped, and there are no known issues mapping to common Dvorak keys (e.g. punctuation).
     - You can play in Dvorak by rebinding all keys.
     - Or you can play in Qwerty, but $$TYPING_PROBLEMS$$.
     - Be sure to start the game in the right layout!
