@@ -6,6 +6,6 @@
   - Dvorak::GameLoader.instance.each_game do |game|
   - test = game.latest_test
     %tr
-      %td= link_to game.name, "/game/#{game.key}.html"
+      %td= link_to game.name, "/game/#{game.key}/"
       %td= test.rating.code
       %td.nowrap= test.date
