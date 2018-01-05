@@ -27,7 +27,8 @@
 
 %ul
   - test.rating_description.each do |point|
-    %li= point
+    - unless point.nil?
+      %li= point
 
 %h2 What happens if I start with the wrong layout?
 

@@ -228,6 +228,11 @@ module Dvorak
         return "you may have difficulty #{problems.join(', ')} and #{last}"
       end
     end
+
+    def subst_no_typing
+      raise SkipItem unless typing.empty?
+      return ""
+    end
   end
 
 end
