@@ -7,7 +7,10 @@
 - test = game.latest_test
 
 %h1
-  %a{href: game.wikipedia, class: 'wikipedia', target: '_blank'}= game.name
+  - if game.wikipedia
+    %a{href: game.wikipedia, class: 'wikipedia', target: '_blank'}= game.name
+  - else
+    = game.name
 
 %table{id: 'rating'}
   %tr{class: 'top'}

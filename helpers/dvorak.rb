@@ -128,7 +128,7 @@ module Dvorak
       @loader = loader
       self.key = key
       self.name = hash.fetch('name')
-      self.wikipedia = hash.fetch('wikipedia')
+      self.wikipedia = hash['wikipedia']
       self.notes = hash['notes']
       self.tested = hash.fetch('tested').map do |hash|
         GameTest.new(loader, hash)
