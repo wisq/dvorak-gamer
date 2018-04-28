@@ -19,8 +19,9 @@ perfect-hints-delayed:
     - All in-game actions can be remapped, and there are no known issues mapping to common Dvorak keys (e.g. punctuation).
     - Changing layout will not immediately update on-screen keyboard hints.  These may eventually update when loading games, changing levels, etc.
   wrong-layout:
+    - Any on-screen hints or prompts will be in the wrong layout.
     - $$TYPING_PROBLEMS$$.
-    - You can safely change layouts while the game is playing, but the hints will be temporarily incorrect.
+    - You can safely change layouts while the game is playing, but the on-screen hints will remain incorrect until updated.
 
 perfect-hardcoded-hints-no-remap:
   code: A-
