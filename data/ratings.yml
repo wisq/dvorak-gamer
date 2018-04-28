@@ -11,6 +11,17 @@ perfect:
     - $$TYPING_PROBLEMS$$.
     - You can safely change layouts while the game is playing.
 
+perfect-hints-delayed:
+  code: A
+  name: Near perfect, hints delayed
+  description:
+    - Binds to raw physical keys, resulting in perfect support for all keyboard layouts.
+    - All in-game actions can be remapped, and there are no known issues mapping to common Dvorak keys (e.g. punctuation).
+    - Changing layout will not immediately update on-screen keyboard hints.  These may eventually update when loading games, changing levels, etc.
+  wrong-layout:
+    - $$TYPING_PROBLEMS$$.
+    - You can safely change layouts while the game is playing, but the hints will be temporarily incorrect.
+
 perfect-hardcoded-hints-no-remap:
   code: A-
   name: Qwerty hints, no remapping

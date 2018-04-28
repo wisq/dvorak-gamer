@@ -176,3 +176,13 @@ bomber-crew:
       rating: qwerty-typing
       typing:
         naming: optional
+
+alien-isolation:
+  name: "Alien: Isolation"
+  wikipedia: https://en.wikipedia.org/wiki/Alien:_Isolation
+  tested:
+    - date: 2018-04-28
+      os: win81
+      version: unknown
+      rating: perfect-hints-delayed
+      typing: {}
