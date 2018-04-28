@@ -211,7 +211,7 @@ module Dvorak
         rescue SkipItem
           nil
         end
-      end
+      end.compact
     end
 
     def subst_typing_problems
