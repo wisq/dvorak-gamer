@@ -43,15 +43,33 @@ Any unplayable games will receive an "F" rating on the index.
 
 ## Can developers make games more playable for Dvorak users?
 
-Yes!  There are two key ways to do this:
+Yes!  There are two key aspects to this:
 
-1. Allow all actions to be remapped, and all keys to be used for remapping.
-2. Bind to physical keys (not mapped keys), store your keybindings as physical key references, and only convert them to mapped keys when displaying them to the user.
+### In-game typing
 
-Doing both of these is the Holy Grail of Dvorak support.  Your game will support any keyboard layout automatically.  Changing layouts mid-game will not impact gameplay, and will only change what keys are displayed on screen.
+If your game involves typing — a social chat system, a "retro" command-line interface, naming your characters or items, etc. — then it's important that those parts of the game respect the keyboard layout the user has selected at the OS level.
 
-Doing either of these alone will still allow Dvorak users to use your game comfortably.  However, if you choose only one of these, do the first one.  Allowing users to customise their interface is more important, and you'll support other layouts indirectly via remapping.  (Trust me, Dvorak users are already very familiar with completely remapping all keys in the games they play!)
+If your game only receives logical keys from the OS (i.e. they've already been mapped to the current keyboard layout), then you're done here.  Skip to "[Keybindings](#keybindings)" below.
+
+If your game normally receives raw (unmapped) physical key codes from the keyboard, you'll need to do one of three things:
+
+* Identify the user's keyboard layout and map those raw key codes to logical keys instead.  (This is going to be OS-specific, so you may need to do some research here.)
+* Switch to reading logical (mapped) keys when text input is required.
+* Offer a "keyboard layout" selector in your in-game options screen, and offer as many layouts as possible.  (Less ideal, but better than nothing.)
+
+It's a pain, sure.  But nobody ever said i18n was easy, and the result will be a smoother experience for all your non-Qwerty users.
+
+### Keybindings
+
+So what about the non-typing parts of your game?  Well, there's two ways to make this easier for non-Qwerty users:
+
+1. Allow all in-game actions to be remapped, and all keyboard keys — at least in the main area, i.e. letters, numbers, **and punctuation** — to be used for remapping.
+2. Bind in-game actions to physical keys (not mapped keys), store your keybindings as physical key references, and only convert them to mapped keys when displaying them to the user.
+
+Doing both of these is the Holy Grail of non-Qwerty support.  Your game will support any keyboard layout automatically.  Changing layouts mid-game will not impact gameplay, and will only change what keys are displayed on screen.
+
+Doing either of these alone will still allow Dvorak users to use your game comfortably.  However, if you choose only one of these, do the first one.  Allowing users to customise their interface is more important — and as long as you don't have any awkward restrictions on what keys can be bound, you'll still support all keyboard layouts.  (Trust me, Dvorak users are already very familiar with completely remapping all keys in the games they play!)
 
 It's important to note that item #2 should be treated as a single parcel.  If you bind to physical keys but store them as logical (mapped) keys in your config files, or vice versa, you are actually creating more hassle than if you just ignored physical keys and worked purely with logical keys.
 
-Of course, the reality is, most developers don't get to choose whether they use physical or mapped keys — it's up to their game engine.  But all of the above advice can apply to game engine developers as well.
+Of course, the reality is, many developers don't get to choose whether they use physical or mapped keys — it's up to what their game engine supports.  But all of the above advice can apply to game engine developers as well.
