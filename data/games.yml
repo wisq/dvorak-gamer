@@ -186,3 +186,13 @@ alien-isolation:
       version: unknown
       rating: perfect-hints-delayed
       typing: {}
+
+starsector:
+  name: Starsector
+  tested:
+    - date: 2018-11-27
+      os: win81
+      version: 0.9a-RC10
+      rating: remap-some-qwerty
+      typing:
+        naming: optional

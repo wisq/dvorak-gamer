@@ -87,6 +87,18 @@ remap-physical-startup:
     - The game will bind to the wrong keys, rendering it unplayable.
     - You will need to restart the game to be able to play.
 
+remap-some-qwerty:
+  code: C-
+  name: Some keys remappable
+  description:
+    - Binds to logical keys, so it's affected by your current layout.
+    - Some keys can be remapped, but some cannot (e.g. menu navigation or other, usually non-critical things).
+    - Whether you consider the game playable in Dvorak will depend on whether you can live with the hardcoded keybindings.
+    - Or you can play in Qwerty, but $$TYPING_PROBLEMS$$.
+  wrong-layout:
+    - The game will be unplayable until you change to the correct layout.
+    - You do not need to restart the game after changing layout.
+
 qwerty:
   code: D
   name: Qwerty only
